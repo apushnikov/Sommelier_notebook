@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--================ Наименование ====================-->
+    <TextView
+        android:id="@+id/tvNameWine"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:text="Наименование вина"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edNameWine"
+        style="@style/StyleEditTextMultiLine1"
+        android:hint="@string/edNameWine_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameWine" />
+
+    <!--================ Дата дегустации ====================-->
+
+    <TextView
+        android:id="@+id/tvDateWine"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="Дата и место дегустации"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNameWine" />
+
+    <TextView
+        android:id="@+id/edDateWine"
+        style="@style/StyleEditTextDateWine"
+        android:onClick="onClickDatePickerFragment"
+        android:text="Выберите дату"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateWine" />
+
+    <!--================ Место дегустации ====================-->
+
+    <EditText
+        android:id="@+id/edTastingPlace"
+        style="@style/StyleEditTextMultiLine1"
+        android:hint="Место дегустации"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/edDateWine"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateWine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

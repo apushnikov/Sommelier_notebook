@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_wineshelf_viewing"
+        android:title="Просмотр изображения" />
+    <item
+        android:id="@+id/menu_wineshelf_edit"
+        android:title="Редактировать полку" />
+    <item
+        android:id="@+id/menu_wineshelf_ChooseFromPictures"
+        android:title="Выбрать из картинок" />
+    <item
+        android:id="@+id/menu_wineshelf_PhotoOrGallery"
+        android:title="Фото или Галерея" />
+    <item
+        android:id="@+id/menu_wineshelf_rotation_right"
+        android:title="Повернуть фото вправо" />
+    <item
+        android:id="@+id/menu_wineshelf_rotation_left"
+        android:title="Повернуть фото влево" />
+    <item
+        android:id="@+id/menu_wineshelf_delete"
+        android:title="Удалить полку" />
+
+</menu>

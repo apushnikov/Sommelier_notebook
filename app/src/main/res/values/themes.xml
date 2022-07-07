@@ -1,0 +1,181 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<!--     Базовая тема приложения.-->
+    <style name="Theme.sommelier_notebook" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!--Основной цвет бренда. -->
+        <!--цвет тулбара, шрифт диалога-->
+        <item name="colorPrimary">@color/primary</item>
+        <!--цвет статус бара-->
+        <item name="colorPrimaryVariant">@color/primaryVariant</item>
+        <!--шрифт тулбара-->
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <!-- Вторичный фирменный цвет. -->
+        <!--цвет плавающей кнопки, шрифт заголовка в настойках, цвет переключателя в настойках-->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondaryVariant</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <!-- Status bar color. -->
+        <!-- Цвет строки состояния. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Настройте свою тему здесь. -->
+
+        <!--Цвет поверхности - используется основного в качестве фона-->
+        <item name="colorPrimarySurface">@color/primarySurface</item>
+        <!--Цвет поверхности - используется в качестве фона для выпадающих меню-->
+        <item name="colorSurface">@color/surface</item>
+
+        <!--Цвет курсора в полях ввода-->
+<!--        <item name="colorAccent">@color/accent</item>-->
+
+        <!--Цвет используется в качестве обрамления рамки в полях ввода в my_editbox_backgroudn -->
+        <item name="boxStrokeColor">@color/boxStroke</item>
+        <!--Цвет используется в качестве фона в полях ввода в my_editbox_backgroudn -->
+        <item name="boxBackgroundColor">@color/boxBackground</item>
+        <!--Цвет используется в цветах для рисунков (глаз, нос, рот), сандвич  -->
+        <item name="badgeTextColor">@color/picture</item>
+
+    </style>
+
+    <style name="Theme.sommelier_notebook.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Цвет поверхности и шрифта - для выпадающих меню-->
+    <style name="Theme.sommelier_notebook.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorSurface">@color/surface_Popup</item>
+        <item name="android:textColor">@color/font_Popup</item>
+    </style>
+
+    <!--Стиль заголовков полей-->
+    <style name="StyleTextView" parent="TextAppearance.AppCompat">
+        <!--Цвет заголовков полей-->
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+
+    <!--СТИЛЬ ПОЛЕЙ ВВОДА-->
+    <!--Общий стиль полей ввода - родитель общий для светлой и темной темы-->
+    <style name="StyleEditTextCommon" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:background">@drawable/my_editbox_background</item>
+        <item name="android:ems">10</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <!--Стиль полей ввода для обычных полей с цветами - светлая тема-->
+    <style name="StyleEditTextColor" parent="StyleEditTextCommon">
+        <!--Цвет полей ввода-->
+        <item name="android:textColor">@color/editTextColor</item>
+        <!--Цвет подсказки-->
+        <item name="android:textColorHint">@color/editTextHintColor</item>
+    </style>
+    <!--Стиль полей ввода для обычных полей - УБРАТЬ-->
+    <!--Стиль полей ввода для строк с 3 линиями (обычные текстовые поля ввода)-->
+    <style name="StyleEditTextMultiLine1" parent="StyleEditTextColor">
+        <item name="android:inputType">textMultiLine|text</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxLines">3</item>
+    </style>
+    <!--Стиль полей ввода для строк с 10 линиями (внешний вид, аромат, вкус)-->
+    <style name="StyleEditTextMultiLine2" parent="StyleEditTextColor">
+        <item name="android:inputType">textMultiLine|text</item>
+        <item name="android:minHeight">100dp</item>
+        <item name="android:maxLines">10</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+    <!--Стиль полей ввода для строк с 20 линиями (заметки)-->
+    <style name="StyleEditTextMultiLine3" parent="StyleEditTextColor">
+        <item name="android:inputType">textMultiLine|text</item>
+        <item name="android:minHeight">200dp</item>
+        <item name="android:maxLines">20</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+    <!--Стиль полей ввода для с целыми числами (год)-->
+    <style name="StyleEditTextNumber" parent="StyleEditTextColor">
+        <item name="android:inputType">number</item>
+    </style>
+    <!--Стиль полей ввода для с десятичными числами (крепость, цена)-->
+    <style name="StyleEditTextNumberDecimal" parent="StyleEditTextColor">
+        <item name="android:inputType">number|numberDecimal</item>
+    </style>
+    <!--Стиль полей ввода для спиннера (цвет)-->
+    <style name="StyleEditTextNumberSpinner" parent="StyleEditTextColor">
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <!--Стиль полей ввода для даты-->
+    <style name="StyleEditTextDateWine" parent="StyleEditTextColor">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minEms">1</item>
+    </style>
+
+    <!--Стиль текстовых сообщений на главной странице-->
+    <style name="StyleTextViewMessage" parent="TextAppearance.AppCompat">
+        <!--Цвет текстовых сообщений на главной странице-->
+        <item name="android:textColor">@color/secondaryVariant</item>
+    </style>
+
+    <!--Цвет кнопок диалога-->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+    </style>
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/buttomTextColor</item>
+    </style>
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/buttomTextColor</item>
+    </style>
+    <style name="NeutralButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/buttomTextColor</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.AdAttribution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">@string/ad_attribution</item>
+        <item name="android:background">#FFCC66</item>
+    </style>
+<!--    <item name="android:width">15dp</item>-->
+<!--    <item name="android:height">15dp</item>-->
+
+
+
+
+
+<!--=====================================================================================-->
+<!--ЭТО СТИЛЬ ДЛЯ ПРОДАЖИ-->
+    <style name="PurchaseLabels" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">@dimen/margin_std_half</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">@color/textColor</item>
+        <!--        <item name="android:fontFamily">@font/press_start_2p</item>-->
+<!--        <item name="android:textSize">14sp</item>-->
+    </style>
+
+
+
+</resources>

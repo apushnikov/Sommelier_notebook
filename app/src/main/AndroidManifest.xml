@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apushnikov.sommelier_notebook">
+    <!-- Определите размеры экрана -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".myApplication.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.sommelier_notebook">
+
+        <!-- Это БОЕВОЙ идентификатор приложения -->
+        <!--
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-XXX~XXX" />
+        -->
+
+        <!-- Это ТЕСТОВАЯ реклама -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditActivity"
+            android:exported="false"
+            android:label="@string/label_EditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.apushnikov.sommelier_notebook.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".photoProcessing.RotationSampleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar" />
+        <activity
+            android:name=".ui.chooseFromPictures.ChooseFromPictures"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar" />
+        <activity
+            android:name=".utilities.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar" />
+        <activity
+            android:name=".ui.aboutTheApplication.AboutTheApplication"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar" />
+        <activity
+            android:name=".ui.splashScreen.SplashScreen"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar" />
+        <activity
+            android:name=".ui.faq.Faq"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar" />
+        <activity
+            android:name=".ui.screenRateAndReview.ScreenRateAndReview"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar" />
+        <activity
+            android:name=".billing.makePurchase.MakePurchase"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar" />
+        <activity
+            android:name=".ui.whatsNew.WhatsNew"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.sommelier_notebook.NoActionBar" />
+
+    </application>
+
+</manifest>

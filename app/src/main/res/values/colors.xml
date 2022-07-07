@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--====================================================================-->
+    <!--Образцы цветов-->
+    <!--====================================================================-->
+
+    <!--Основной цвет - Amber-->
+    <!--слабый-->
+    <!--Основной-->
+    <!--Насыщенный-->
+
+    <!--Вторичный цвет - Red-->
+
+    <!--Основной цвет - Amber-->
+    <!--слабый-->
+
+    <!--Основной цвет - Yellow-->
+    <!--слабый-->
+    <!--Основной-->
+    <!--Насыщенный-->
+    <!--Супер Насыщенный-->
+
+    <!--Основной цвет - purple-->
+
+    <!--Основной цвет - Grey-->
+    <color name="grey_200">#FFeeeeee</color>
+    <color name="grey_400">#FFbdbdbd</color>
+    <color name="grey_500">#FF9e9e9e</color>
+    <color name="grey_600">#FF757575</color>
+    <color name="grey_800">#FF424242</color>
+    <color name="grey_900">#FF212121</color>
+
+    <!--Вторичный цвет - Pink-->
+    <!--слабый-->
+    <!--Основной-->
+    <!--Насыщенный-->
+    <!--Супер Насыщенный-->
+
+    <!--Вторичный цвет - teal-->
+
+    <!--Вторичный цвет - green-->
+    <color name="green_Dark">#FF00ca00</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!--====================================================================-->
+    <!--Реализация светлой темы-->
+    <!--====================================================================-->
+
+    <color name="primary">@color/grey_600</color>
+    <!--    <color name="primary">@color/purple_500</color>-->
+    <color name="primaryVariant">@color/grey_800</color>
+    <!--    <color name="primaryVariant">@color/amber_900</color>-->
+    <color name="onPrimary">@color/white</color>
+    <color name="secondary">@color/green_Dark</color>
+    <color name="secondaryVariant">@color/green_Dark</color>
+    <color name="onSecondary">@color/white</color>
+
+    <!--Цвет поверхности - используется основного в качестве фона-->
+    <color name="primarySurface">@color/grey_200</color>
+    <!--Цвет поверхности - используется в качестве фона для выпадающих меню-->
+    <color name="surface">@color/white</color>
+
+    <!--Цвет используется в качестве обрамления рамки в полях ввода в my_editbox_backgroudn -->
+    <color name="boxStroke">@color/grey_400</color>
+    <!--Цвет используется в качестве фона в полях ввода в my_editbox_backgroudn -->
+    <color name="boxBackground">@color/white</color>
+    <!--Цвет используется в цвета для рисунков -->
+    <color name="picture">@color/grey_600</color>
+
+    <color name="red">#FF5722</color>
+
+    <!--Цвет поверхности и шрифта - для выпадающих меню-->
+    <color name="surface_Popup">@color/white</color>
+    <color name="font_Popup">@color/black</color>
+
+    <!--Стиль заголовков полей-->
+    <!--Цвет заголовков полей-->
+    <color name="textColor">@color/grey_600</color>
+
+    <!--Стиль полей ввода-->
+    <!--Цвет полей ввода-->
+    <color name="editTextColor">@color/black</color>
+    <!--Цвет подсказки-->
+    <color name="editTextHintColor">@color/grey_500</color>
+
+    <!--Цвет кнопок диалога-->
+    <color name="buttomTextColor">@color/grey_600</color>
+
+    <!--====================================================================-->
+    <!--Реализация темной темы-->
+    <!--====================================================================-->
+
+    <color name="primaryDark">@color/grey_800</color>
+    <!--    <color name="primaryDark">@color/purple_500</color>-->
+    <color name="primaryVariantDark">@color/grey_900</color>
+    <!--    <color name="primaryVariantDark">@color/amber_900</color>-->
+    <color name="onPrimaryDark">@color/grey_500</color>
+    <color name="secondaryDark">@color/green_Dark</color>
+    <color name="secondaryVariantDark">@color/green_Dark</color>
+    <color name="onSecondaryDark">@color/white</color>
+
+    <!--Цвет поверхности - используется основного в качестве фона-->
+    <color name="primarySurfaceDark">@color/grey_900</color>
+    <!--    <color name="primarySurfaceDark">@color/purple_500</color>-->
+    <!--Цвет поверхности - используется в качестве фона для выпадающих меню-->
+    <color name="surfaceDark">@color/grey_600</color>
+
+    <!--Цвет используется в качестве обрамления рамки в полях ввода в my_editbox_backgroudn -->
+    <color name="boxStrokeDark">@color/grey_800</color>
+    <!--    <color name="boxStrokeDark">@color/purple_500</color>-->
+    <!--Цвет используется в качестве фона в полях ввода в my_editbox_backgroudn -->
+    <color name="boxBackgroundDark">@color/grey_800</color>
+    <!--    <color name="boxBackgroundDark">@color/amber_900</color>-->
+    <!--Цвет используется в цветах для рисунков (глаз, нос, рот), сандвич  -->
+    <color name="pictureDark">@color/grey_500</color>
+
+    <!--Цвет поверхности и шрифта - для выпадающих меню-->
+    <color name="surface_PopupDark">@color/grey_600</color>
+    <color name="font_PopupDark">@color/grey_200</color>
+
+    <!--Стиль заголовков полей-->
+    <!--Цвет заголовков полей-->
+    <color name="textColorDark">@color/grey_500</color>
+
+    <!--Стиль полей ввода-->
+    <!--Цвет полей ввода-->
+    <color name="editTextColorDark">@color/grey_200</color>
+    <!--Цвет подсказки-->
+    <color name="editTextHintColorDark">@color/grey_600</color>
+
+    <!--Цвет кнопок диалога-->
+    <color name="buttomTextColorDark">@color/grey_400</color>
+
+</resources>

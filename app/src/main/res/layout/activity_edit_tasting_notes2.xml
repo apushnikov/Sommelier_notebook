@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--================ Потенциал хранения ====================-->
+    <TextView
+        android:id="@+id/tvStoragePotential"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:text="Потенциал хранения"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edStoragePotential"
+        style="@style/StyleEditTextMultiLine1"
+        android:hint="Потенциал хранения"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStoragePotential" />
+
+    <!--================ Температура подачи ====================-->
+    <TextView
+        android:id="@+id/tvServingTemperature"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Температура подачи"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edStoragePotential" />
+
+    <EditText
+        android:id="@+id/edServingTemperature"
+        style="@style/StyleEditTextMultiLine1"
+        android:hint="Температура подачи"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvServingTemperature" />
+
+    <!--================ Гастрономические компаньоны ====================-->
+    <TextView
+        android:id="@+id/tvGastronomicPartners"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Гастрономические компаньоны"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edServingTemperature" />
+
+    <EditText
+        android:id="@+id/edGastronomicPartners"
+        style="@style/StyleEditTextMultiLine1"
+        android:hint="Гастрономические компаньоны"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGastronomicPartners" />
+
+    <!--================ Место покупки (где куплено) ====================-->
+    <TextView
+        android:id="@+id/tvTastingPurchase"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Место покупки"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edGastronomicPartners" />
+
+    <EditText
+        android:id="@+id/edTastingPurchase"
+        style="@style/StyleEditTextMultiLine1"
+        android:hint="Место покупки"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTastingPurchase" />
+
+    <!--================ Заметки/впечатления ====================-->
+    <TextView
+        android:id="@+id/tvNotes"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Заметки/впечатления"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTastingPurchase" />
+
+    <ImageView
+        android:id="@+id/ivNotes"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNotes"
+        app:srcCompat="@drawable/ic_baseline_edit_note_24" />
+
+    <EditText
+        android:id="@+id/edNotes"
+        style="@style/StyleEditTextMultiLine3"
+        android:hint="Заметки/впечатления"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivNotes"
+        app:layout_constraintTop_toBottomOf="@+id/tvNotes" />
+
+
+
+    <!--================ Моя оценка ====================-->
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Моя оценка"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/llRating" />
+
+    <LinearLayout
+        android:id="@+id/llRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNotes">
+
+        <ImageView
+            android:id="@+id/imageStar1"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:onClick="onClickRating"
+            android:src="@drawable/star_highlighted_1" />
+<!--            app:srcCompat="@drawable/star_highlighted_1" />-->
+
+        <ImageView
+            android:id="@+id/imageStar2"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:onClick="onClickRating"
+            android:src="@drawable/star_not_highlighted_1" />
+<!--            app:srcCompat="@drawable/star_not_highlighted_1" />-->
+
+        <ImageView
+            android:id="@+id/imageStar3"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:onClick="onClickRating"
+            android:src="@drawable/star_highlighted" />
+<!--            app:srcCompat="@drawable/star_highlighted" />-->
+
+        <ImageView
+            android:id="@+id/imageStar4"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:onClick="onClickRating"
+            android:src="@drawable/star_highlighted" />
+<!--            app:srcCompat="@drawable/star_highlighted" />-->
+
+        <ImageView
+            android:id="@+id/imageStar5"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:onClick="onClickRating"
+            android:src="@drawable/star_not_highlighted" />
+<!--            app:srcCompat="@drawable/star_not_highlighted" />-->
+    </LinearLayout>
+
+    <!--================ Место для рекламы ====================-->
+    <FrameLayout
+        android:id="@+id/fl_adplaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRating" />
+
+    <!--================ Пустое пространство ====================-->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_adplaceholder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

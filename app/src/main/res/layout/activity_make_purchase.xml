@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.apushnikov.sommelier_notebook.billing.makePurchase.MakePurchase">
+
+    <data>
+        <variable
+            name="mpvm"
+            type="com.apushnikov.sommelier_notebook.billing.makePurchase.MakePurchaseViewModel"/>
+        <import type="android.view.View"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inapp_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.apushnikov.sommelier_notebook.billing.makePurchase.MakePurchase"
+            tools:listitem="@layout/inventory_item" />
+        <!--android:enabled="@{!mpvm.billingFlowInProcess}"-->
+
+    </FrameLayout>
+</layout>

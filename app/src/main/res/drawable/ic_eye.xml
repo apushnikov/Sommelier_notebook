@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="125dp"
+    android:viewportWidth="100"
+    android:viewportHeight="125">
+  <path
+      android:fillColor="?attr/badgeTextColor"
+      android:pathData="M50,25C18.742,25 5.843,47.825 5.309,48.796c-0.412,0.75 -0.412,1.658 0,2.407C5.843,52.175 18.742,75 50,75s44.157,-22.825 44.691,-23.796c0.412,-0.75 0.412,-1.658 0,-2.407C94.157,47.825 81.258,25 50,25zM50,70c-24.583,0 -36.566,-15.444 -39.559,-19.988C13.443,45.536 25.626,30 50,30c24.578,0 36.562,15.438 39.559,19.989C86.555,54.466 74.372,70 50,70z"/>
+  <path
+      android:fillColor="?attr/badgeTextColor"
+      android:pathData="M50,35c-8.271,0 -15,6.729 -15,15s6.729,15 15,15s15,-6.729 15,-15S58.271,35 50,35zM50,60c-5.514,0 -10,-4.486 -10,-10s4.486,-10 10,-10s10,4.486 10,10S55.514,60 50,60z"/>
+</vector>
+
+<!--    android:fillColor="#FF000000"-->

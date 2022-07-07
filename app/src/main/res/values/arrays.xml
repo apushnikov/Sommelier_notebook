@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Preference - Предпочтения при съемке фото - поворот -->
+    <string-array name="reply_entries_rotation">
+        <item>Не поворачивать</item>
+        <item>Повернуть влево</item>
+        <item>Повернуть вправо</item>
+    </string-array>
+
+    <string-array name="reply_values_rotation">
+        <item>rotation_no</item>
+        <item>rotation_left</item>
+        <item>rotation_right</item>
+    </string-array>
+
+    <!-- Preference - Предпочтения темы -->
+    <string-array name="reply_entries_theme">
+        <item>Светлая</item>
+        <item>Темная</item>
+        <item>Как в системе</item>
+        <item>Тема экономии заряда батареи</item>
+    </string-array>
+
+    <string-array name="reply_values_theme">
+        <item>theme_light</item>
+        <item>theme_dark</item>
+        <item>theme_system</item>
+        <item>theme_battery</item>
+    </string-array>
+
+    <!-- Preference - Предпочтения внешнего вида - вид оценки: бокалы, звездочки -->
+    <string-array name="reply_entries_type_of_assessmen">
+        <item>Бокальчики</item>
+        <item>Звездочки</item>
+    </string-array>
+
+    <string-array name="reply_values_type_of_assessmen">
+        <item>type_of_assessmen_wineglass</item>
+        <item>type_of_assessmen_star</item>
+    </string-array>
+
+
+
+</resources>

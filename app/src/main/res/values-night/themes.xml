@@ -1,0 +1,110 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+        <!-- Base application theme. -->
+    <style name="Theme.sommelier_notebook" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!--Основной цвет бренда. -->
+        <!--цвет тулбара, шрифт диалога-->
+        <item name="colorPrimary">@color/primaryDark</item>
+        <!--цвет статус бара-->
+        <item name="colorPrimaryVariant">@color/primaryVariantDark</item>
+        <!--шрифт тулбара-->
+        <item name="colorOnPrimary">@color/onPrimaryDark</item>
+        <!-- Вторичный фирменный цвет. -->
+        <!--цвет плавающей кнопки, шрифт заголовка в настойках, цвет переключателя в настойках-->
+        <item name="colorSecondary">@color/secondaryDark</item>
+        <item name="colorSecondaryVariant">@color/secondaryVariantDark</item>
+        <item name="colorOnSecondary">@color/onSecondaryDark</item>
+        <!-- Status bar color. -->
+        <!-- Цвет строки состояния. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Настройте свою тему здесь. -->
+
+        <!--Цвет поверхности - используется основного в качестве фона-->
+        <item name="colorPrimarySurface">@color/primarySurfaceDark</item>
+        <!--Цвет поверхности - используется в качестве фона для выпадающих меню-->
+        <item name="colorSurface">@color/surfaceDark</item>
+
+        <!--Цвет курсора в полях ввода-->
+        <!--        <item name="colorAccent">@color/accentDark</item>-->
+
+        <!--Цвет используется в качестве обрамления рамки в полях ввода в my_editbox_backgroudn -->
+        <item name="boxStrokeColor">@color/boxStrokeDark</item>
+        <!--Цвет используется в качестве фона в полях ввода в my_editbox_backgroudn -->
+        <item name="boxBackgroundColor">@color/boxBackgroundDark</item>
+        <!--Цвет используется в цветах для рисунков (глаз, нос, рот), сандвич  -->
+        <item name="badgeTextColor">@color/pictureDark</item>
+
+    </style>
+
+    <style name="Theme.sommelier_notebook.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Цвет поверхности и шрифта - для выпадающих меню-->
+    <style name="Theme.sommelier_notebook.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorSurface">@color/surface_PopupDark</item>
+        <item name="android:textColor">@color/font_PopupDark</item>
+    </style>
+
+    <!--Стиль заголовков полей-->
+    <style name="StyleTextView" parent="TextAppearance.AppCompat">
+        <!--Цвет заголовков полей-->
+        <item name="android:textColor">@color/textColorDark</item>
+    </style>
+
+    <!--Стиль полей ввода для обычных полей с цветами - темная тема-->
+    <style name="StyleEditTextColor" parent="StyleEditTextCommon">
+        <!--Цвет полей ввода-->
+        <item name="android:textColor">@color/editTextColorDark</item>
+        <!--Цвет подсказки-->
+        <item name="android:textColorHint">@color/editTextHintColorDark</item>
+    </style>
+
+    <!--Стиль текстовых сообщений на главной странице-->
+    <style name="StyleTextViewMessage" parent="TextAppearance.AppCompat">
+        <!--Цвет текстовых сообщений на главной странице-->
+        <item name="android:textColor">@color/secondaryVariantDark</item>
+    </style>
+
+    <!--Цвет кнопок диалога-->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+    </style>
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/buttomTextColorDark</item>
+    </style>
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/buttomTextColorDark</item>
+    </style>
+    <style name="NeutralButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/buttomTextColorDark</item>
+    </style>
+
+
+
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.AdAttribution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">@string/ad_attribution</item>
+        <item name="android:background">#FFCC66</item>
+    </style>
+<!--    <item name="android:width">15dp</item>-->
+<!--    <item name="android:height">15dp</item>-->
+
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apushnikov.sommelier_notebook.swipe.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/my_editbox_background"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_red_dark">
+        <!--        android:background="#ffcc0000">-->
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:text="УДАЛИТЬ"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/delete_layout"
+            app:layout_constraintTop_toTopOf="@+id/delete_layout" />
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintStart_toEndOf="@+id/tvDelete"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/front_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+        <!--        android:background="@android:drawable/editbox_background_normal">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tap_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/iButtonWineMoreVert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imagePhoto"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+<!--                app:srcCompat="@drawable/ic_wine_empty" />-->
+
+            <TextView
+                android:id="@+id/tvNameWine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imagePhoto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imagePhoto"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameWine">
+
+                <TextView
+                    android:id="@+id/tvDateWine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата:"
+                    app:layout_constraintStart_toStartOf="@+id/bottom_layout"
+                    app:layout_constraintTop_toTopOf="@+id/bottom_layout" />
+
+                <ImageView
+                    android:id="@+id/imageRating"
+                    android:layout_width="123dp"
+                    android:layout_height="20dp"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toEndOf="@+id/bottom_layout"
+                    app:layout_constraintTop_toTopOf="@+id/bottom_layout"
+                    android:src="@drawable/star_on_5" />
+<!--                    android:src="@drawable/star_on_1" />-->
+<!--                    app:srcCompat="@drawable/star_on_1" />-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/iButtonWineMoreVert"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--</FrameLayout>-->
+</com.apushnikov.sommelier_notebook.swipe.SwipeRevealLayout>
+

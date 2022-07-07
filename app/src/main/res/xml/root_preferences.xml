@@ -1,0 +1,59 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/rotation_header">
+
+        <ListPreference
+            app:defaultValue="rotation_no"
+            app:entries="@array/reply_entries_rotation"
+            app:entryValues="@array/reply_values_rotation"
+            app:key="rotation"
+            app:title="@string/rotation_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/theme_header">
+
+        <ListPreference
+            app:defaultValue="theme_system"
+            app:entries="@array/reply_entries_theme"
+            app:entryValues="@array/reply_values_theme"
+            app:key="theme"
+            app:title="@string/theme_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/wine_shelf_header">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="wine_shelf_save_last"
+            app:title="@string/wine_shelf_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/voice_input_header">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="enable_voice_input"
+            app:title="@string/voice_input_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/appearance_header">
+
+        <ListPreference
+            app:defaultValue="type_of_assessmen_wineglass"
+            app:entries="@array/reply_entries_type_of_assessmen"
+            app:entryValues="@array/reply_values_type_of_assessmen"
+            app:key="type_of_assessmen"
+            app:title="@string/type_of_assessmen_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_photo_main"
+        android:title="Сделать фото главным" />
+    <item
+        android:id="@+id/menu_photo_rotation_right"
+        android:title="Повернуть фото вправо" />
+    <item
+        android:id="@+id/menu_photo_rotation_left"
+        android:title="Повернуть фото влево" />
+    <item
+        android:id="@+id/menu_photo_delete"
+        android:title="Удалить фото" />
+</menu>

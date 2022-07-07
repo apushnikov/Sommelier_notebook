@@ -1,0 +1,396 @@
+<resources>
+
+    <!--    region: Наименование и версия-->
+    <string name="app_name">Блокнот сомелье</string>
+    <string name="app_version">1.1</string>
+
+    <string name="label_EditActivity">Описание вина</string>
+    <string name="edNameWine_hint">Наименование вина</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: Строки в RotationSampleActivity-->
+    <string name="setTitle_RotationSampleActivity">Главное фото</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: Строки в WineShelfAdapter.java-->
+    <string name="shelf_name_must_not_be_empty">Наименование полки не должно быть пустым</string>
+    <string name="file_was_not_created">Файл не был создан</string>
+    <string name="error_occurred_while_trying_to_take_photo">Произошла ошибка при попытке сделать фото</string>
+
+    <string name="mMessage01">Винная полка"</string>
+    <string name="mMessage02">содержит "</string>
+    <string name="mMessage03"> вин(а)."</string>
+    <string name="mMessage04">\nПри удалении винной полки они будут удалены."</string>
+    <string name="mMessage05">\nУдаляем?"</string>
+    <string name="mMessage06">не содержит вин"</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: Строки в ChooseFromPictures.java-->
+    <string name="setTitle_ChooseFromPictures">Выберите картинку</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: Строки в EditActivity.java-->
+    <string name="camera_permission_GOT">Разрешение на камеру ПОЛУЧЕНО!</string>
+    <string name="access_to_the_camera_is_DENIED">В доступе к камере ОТКАЗАНО!</string>
+
+    <string name="say_KEY_word_followed_by_text">Скажите КЛЮЧЕВОЕ слово, и далее текст!</string>
+    <string name="missing_or_not_configured_Google_Voice_Typing">Похоже, в Вас отсутствует или не
+        настроен \"Голосовой ввод Google\"</string>
+    <string name="error_occurred_while_trying_to_invoke_speech_recognizer">При попытке вызвать распознаватель речи, произошла ошибка</string>
+
+    <string name="sort_not_recognized">Сорт не распознается:</string>
+    <string name="year_not_recognized">Год не распознается:</string>
+    <string name="strength_not_recognized">Крепость не распознается:</string>
+    <string name="price_not_recognized">Цена не распознается:</string>
+    <string name="rating_not_recognized">Оценка не распознается:</string>
+    <string name="just_key_word">Произнесено просто ключевое слово:</string>
+
+    <string name="the_name_of_the_wine_is_not_filled">Наименование вина не заполнено</string>
+    <string name="saved">Сохранено!</string>
+
+    <string name="to_request_ad_you_must_check_at_least_one_ad_format">Чтобы запросить
+        объявление, необходимо проверить хотя бы один формат объявления.</string>
+    <string name="user_click_occurred_in_a_simple_template">Произошел пользовательский щелчок в
+        простом шаблоне</string>
+    <string name="failed_to_load_custom_ad">Не удалось загрузить собственное объявление: </string>
+
+    <string name="division_error">Ошибка деления</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: Строки в MainActivity.java-->
+    <string name="permission_received">Разрешение получено!</string>
+    <string name="access_denied">В доступе отказано!</string>
+
+    <string name="first_create_WineShelf">Сначала создайте винную полку</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: СТРОКИ МЕНЮ-->
+    <string name="how_to_start">Как начать?</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_faq">FAQ (Часто задаваемые вопросы)</string>
+    <string name="action_about_the_application">О приложении</string>
+    <string name="action_whats_new">Что нового</string>
+    <string name="action_rate_and_review">Оценка и отзыв</string>
+    <string name="action_go_premium">Переход на Premium</string>
+    <string name="action_consume_premium">Потребляйте Premium (Для тестирования)</string>
+
+    <string name="backPressedText">Нажмите еще раз, чтобы выйти</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: СТРОКИ ДИАЛОГОВ-->
+
+    <!--    Диалог: Сделать фото или взять из галереи?-->
+    <string name="dialog_new_photo">Сделать фото или взять из галереи?</string>
+    <string name="dialog_to_make_a_photo">Сделать фото</string>
+    <string name="dialog_take_from_gallery">Выбрать из галереи</string>
+
+    <!--    Диалог: Выход из редактирования карточки вина-->
+    <string name="exit_editing_wine">Выход из редактирования карточки вина</string>
+    <!--    Диалог: Выход из редактирования фотографии-->
+    <string name="dialog_exit_editing_photo">Выход из редактирования фотографии</string>
+
+    <string name="dialog_save_and_exit">Сохранить и выйти</string>
+    <string name="dialog_exit_without_saving">Выйти без сохранения</string>
+    <string name="dialog_stay_here">Остаться</string>
+
+    <!--    Диалог: Удалить фотографию?-->
+    <string name="dialog_delete_photo">Удалить фотографию?</string>
+    <string name="dialog_delete_photo_yes">Удалить</string>
+    <string name="dialog_delete_photo_no">Отмена</string>
+
+    <!--    Диалог: Удалить вино?-->
+    <string name="dialog_delete_wine">Удалить вино?</string>
+    <string name="dialog_delete_wine_yes">Удалить</string>
+    <string name="dialog_delete_wine_no">Отмена</string>
+
+    <!--    Диалог: Удалить винную полку?-->
+    <string name="dialog_delete_wine_shelf">Удалить винную полку?</string>
+    <string name="dialog_delete_wine_shelf_yes">Удалить</string>
+    <string name="dialog_delete_wine_shelf_no">Отмена</string>
+
+    <!--    Диалог: Создание или редактирование винной полки-->
+    <string name="dialog_new_or_edit_wine_shelf_yes">Ввод</string>
+    <string name="dialog_new_or_edit_wine_shelf_no">Отмена</string>
+
+    <!--    Диалог: Перейти на Premium?-->
+    <string name="dialog_GoPremium">Перейти на Premium?</string>
+    <string name="dialog_GoPremium_yes">Перейти на Premium</string>
+    <string name="dialog_GoPremium_no">Спасибо, позже</string>
+    <string name="dialog_RestrictionsForThisVersion">Для этой версии ограничения: не более </string>
+    <string name="dialog_WinesOnOneWineShelf"> вин на одной винной полке.\n\n</string>
+    <string name="dialog_WineShelves"> винных полок.\n\n</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: СТРОКИ ПРЕДПОЧТЕНИЙ-->
+    <!-- Preference Titles: Заголовки предпочтений -->
+    <string name="rotation_header">Настройки поворота фото</string>
+    <string name="theme_header">Настройки темы</string>
+    <string name="wine_shelf_header">Настройки сохранения винных полок</string>
+    <string name="voice_input_header">Настройки голосового ввода</string>
+    <string name="appearance_header">Настройки внешнего вида</string>
+
+    <!-- rotation Preferences: Настройки поворота фото -->
+    <string name="rotation_title">Сразу поворачивать фото</string>
+
+    <!-- theme Preferences: Настройки темы -->
+    <string name="theme_title">Выбранная тема</string>
+
+    <!-- wine_shelf Preferences: Выбор винной полки -->
+    <string name="wine_shelf_title">Сохранять выбранную</string>
+
+    <!-- voice_input Preferences: Настройки голосового ввода -->
+    <string name="voice_input_title">Включить голосовой ввод</string>
+
+    <!-- theme Preferences: Настройки внешнего вида - вид оценки: бокалы, звездочки-->
+    <string name="type_of_assessmen_title">Как отображаются оценки</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: СТРОКИ В ОКНЕ "О приложении"-->
+    <!--    О приложении-->
+    <!--    <string name="tvAboutHeading">О приложении</string>-->
+    <string name="tvAboutText">
+        Дегустационный блокнот с  возможностью голосового ввода\nБольше не нужно вести бумажных записей! Вся информация о вине у Вас под рукой
+    </string>
+    <string name="tvIsPremiumText">
+        У Вас <b>Premium</b> версия:\n
+        - Без рекламы\n
+        - Количество винных полок – неограниченно\n
+        - Количество вин – неограниченно
+    </string>
+    <string name="tvIsFreeText">
+        (У Вас <b>Free</b> версия:\n
+        - С рекламой (<b>Сейчас без рекламы!</b>)\n
+        - Количество винных полок – не более 1000\n
+        - Количество вин на одной винной полке – не более 1000\n
+        Чтобы воспользоваться всеми преимуществами приложения, перейдите на <b>Premium</b> версию)
+    </string>
+
+    <string name="tvForWhomHeading">Для кого</string>
+    <string name="tvForSommelier">- Для сомелье</string>
+    <string name="tvForSommelierText">
+        Если Вы сомелье, приложение поможет Вам иметь всегда под рукой справочник вин и
+        легко его наполнять
+    </string>
+    <string name="tvForWineLover">- Для любителей хорошего вина</string>
+    <string name="tvForWineLoverText">
+        Если Вы неравнодушны к хорошему вину, посещаете дегустации, хотите запомнить
+        понравившиеся вина, то это приложение для Вас
+    </string>
+
+    <string name="tvVersionHeading">Версия приложения</string>
+    <string name="tvVersionText">Версия приложения </string>
+
+    <string name="tvAuthorHeading">Автор идеи</string>
+    <string name="tvAuthorName">Астра Гаспарян</string>
+    <string name="tvAuthorText">Сомелье, блоггер</string>
+
+    <string name="tvDeveloperHeading">Разработчик</string>
+    <string name="tvDeveloperName">Андрей Пушников</string>
+    <string name="tvDeveloperText">
+        Если возникли вопросы, трудности или пожелания, напишите.
+        Мы обязательно разберемся
+    </string>
+
+    <string name="tvAppReviewHeading">Оставить отзыв</string>
+    <string name="tvAppReviewText">
+        Отзывы и оценки в Play Маркет очень помогают в развитии продукта\nОставьте, пожалуйста, отзыв
+    </string>
+    <string name="btRateAndReview">Оценка и отзыв</string>
+    <!--    <string name="btReview">Отзыв</string>-->
+
+    <string name="tvShareTheAppHeading">Поделитесь приложением</string>
+    <string name="tvShareTheAppText">Расскажите друзьям об этом приложении</string>
+    <string name="btShareTheApp">Поделиться</string>
+
+    <string name="tvGoPremiumHeading">Перейти на Premium</string>
+    <string name="tvGoPremiumText">
+        <b>Premium</b> функции:\n
+        - Без рекламы\n
+        - Количество винных полок – неограниченно\n
+        - Количество вин – неограниченно
+    </string>
+    <string name="btGoPremium">Перейти на Premium</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: СТРОКИ В ОКНЕ "Заставка"-->
+    <string name="tvSplashScreenText1">
+        Приветствуем Вас в дегустационном блокноте с возможностью голосового ввода
+    </string>
+    <string name="tvSplashScreenText2">\nЧтобы начать:</string>
+
+    <string name="tvCreateWineShelfFirstHeading">\n1. Сначала создайте винную полку</string>
+    <string name="tvCreateWineShelfFirstText1">
+        Это позволит группировать вина по какому-либо признаку
+    </string>
+    <string name="tvCreateWineShelfFirstText2">
+        Например, «Красные вина», «Белые вина»... Или «Вина Франции», «Вина Италии»… Или по какому-то другому признаку
+    </string>
+
+    <string name="tvAddWineToShelfHeading">\n2. Потом добавьте на полку вина</string>
+    <string name="tvAddWineToShelfText1">Обязательным является поле «Наименование вина». Остальные поля – заполняются по желанию</string>
+
+    <string name="tvUseVoiceInputToEnterHeading">\n3. Используйте голосовой ввод</string>
+    <string name="tvUseVoiceInputToEnterText1">Один раз нажмите на значок «Микрофон»</string>
+    <string name="tvUseVoiceInputToEnterText2">Произнесите имя поля и далее текст.
+        Например:</string>
+    <string name="tvUseVoiceInputToEnterText3">Произносим «наименование вина шардоне» - в поле
+        «Наименование вина» будет помещено «Шардоне»</string>
+    <string name="tvUseVoiceInputToEnterText4">Произносим «Крепость двенадцать точка пять» - в
+        поле «Крепость» будет помещено «12.5»</string>
+    <string name="tvUseVoiceInputToEnterText5">Произносим «оценка хорошо» - в оценке закрасятся
+        4 бокальчика</string>
+
+    <string name="btClose">Закрыть</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: СТРОКИ В ОКНЕ "FAQ"-->
+    <string name="tvFAQHeading">FAQ (Часто задаваемые вопросы)</string>
+    <string name="tvQuestion01">В чем смысл винных полок?</string>
+    <string name="tvAnswer01">
+        "\n
+        Они позволяют группировать вина по какому-либо признаку.\n
+        Например, «Красные вина», «Белые вина»… \n
+        Или «Вина Франции», «Вина Италии»… \n
+        Или по какому-то другому признаку, например, «Дегустация от 09.09.21», «Винное казино»."
+        </string>
+
+    <string name="tvQuestion02">Как использовать голосовой ввод?</string>
+    <string name="tvAnswer02">
+        "\n
+        1. Один раз нажмите на значок «Микрофон».\n
+        2. Произнесите имя поля (ключевое слово) и далее текст.\n
+        Примеры:\n
+        - Произносим: «наименование вина шардоне». Результат: в поле «Наименование вина» будет помещено «Шардоне».\n
+        - Произносим: «место дегустации бар собаки в тумане». Результат: в поле «Место дегустации» будет помещено «Бар собаки в тумане».\n
+        - Произносим: «Крепость двенадцать точка пять». Результат: в поле «Крепость» будет помещено «12.5».\n
+        - Произносим: «оценка хорошо» - в оценке закрасятся 4 бокальчика.\n
+        3. Если ключевое не распознается, то весь текст будет помещен в конец поля «Заметки/Впечатления”.\n
+        4. Завершается сеанс диктовки автоматически через две секунды, после того, как Вы перестали говорить.\n
+        5. Если хочется прервать сеанс диктовки, нажмите еще раз значок «Микрофон»."
+        </string>
+
+    <string name="tvQuestion03">На всех ли устройствах работает голосовой ввод?</string>
+    <string name="tvAnswer03">
+        "\n
+        Обычно, да. Но есть следующие особенности:\n
+        Для распознавания используется сервис «Голосовой ввод Google».\n
+        При недоступном интернете сервис работает неустойчиво и плохо распознает произносимый текст.\n
+        Кроме того, на некоторых устройствах, например Huawei Honor, нет сервисов Google.\n
+        В случае, если голосовой ввод недоступен, можно в настройках приложения отключить кнопку «Микрофон»."
+        </string>
+
+    <string name="tvQuestion04">Список ключевых слов</string>
+    <string name="tvAnswer04">
+        "\n
+        Наименование, Название, Наименование вина, Название вина\n
+        Место дегустации\n
+        Страна\n
+        Регион\n
+        Сорт винограда, Сорт\n
+        Цвет, Цвет вина (Красное, Белое, Розовое, Оранжевое)\n
+        Год урожая, Год\n
+        Крепость\n
+        Цена\n
+        Производитель\n
+        Дистрибьютор\n
+        Внешний вид\n
+        Аромат\n
+        Вкус, Вкусовые характеристики, Послевкусие\n
+        Потенциал хранения\n
+        Температура подачи\n
+        Гастрономические компаньоны, Гастропары\n
+        Место покупки\n
+        Заметки, Впечатления\n
+        Оценка, Моя оценка (Ноль, Один, Два, Двойка, Три, Удовлетворительно, Четыре, Хорошо, Пять, Отлично)"
+        </string>
+
+    <string name="tvQuestion05">Почему при фотографировании мое фото повернуто?</string>
+    <string name="tvAnswer05">
+        "\n
+        Разные устройства при фотографировании ведут себя по-разному. Например, Samsung поворачивает фото, а Xiaomi - нет.\n
+        Если Вы получаете при фотографировании перевернутое фото, зайдите в настойки и выберите пункт «Сразу поворачивать фото». Установите «Повернуть вправо»."
+        </string>
+
+    <string name="tvQuestion06">Я хочу купить Premium. Я должен заплатить только один раз?</string>
+    <string name="tvAnswer06">
+        "\n
+        Вы платите один раз и можете использовать  <b>Premium</b> неограниченное время. Имейте в виду: Ваша покупка привязана к Google account. Если Вы решите сменить account, покупку перенести не удастся."
+        </string>
+
+    <string name="tvQuestion07">Я хочу использовать Premium на нескольких устройствах. Нужно ли мне покупать приложение несколько раз?</string>
+    <string name="tvAnswer07">
+        "\n
+        Нет. Покупка привязана не к устройству, а к Google account. Если Вы купили <b>Premium</b> на одном устройстве, при установке на другое устройство автоматически будет <b>Premium</b>-версия. Нужно только, чтобы на втором устройстве был тот же Google account."
+        </string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: СТРОКИ В ОКНЕ "О приложении"-->
+    <string name="tvAuthorInstagram">https://www.instagram.com/astra_wine/</string>
+    <string name="tvMyEMail">apushnikov@mail.ru</string>
+    <string name="tvEXTRA_SUBJECT">Сообщение из приложения \"</string>
+    <string name="tvEXTRA_TEXT">ЗАМЕНИТЕ НА СВОЕ СООБЩЕНИЕ"</string>
+    <string name="tvMyPhoneNumber">79035202427</string>
+    <string name="tvMyMakeSureWhatsAppInstalled">Убедитесь, что на вашем устройстве установлено приложение WhatsApp</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: СТРОКИ В ОКНЕ "Что нового"-->
+    <!--    новые версии помещаются ВВЕРХ-->
+    <string name="tvWhatsNewHeading">Что нового</string>
+
+    <string name="tvVersion02">1.1</string>
+    <string name="tvDate02">29.03.22</string>
+    <string name="tvContent02">
+        "В связи с изменившимися обстоятельствами, внесены следующие изменения:\n
+        - Убрана реклама\n
+        - Ослаблены ограничения на <b>Free</b> версию – теперь до 1000 винных полок и до 1000 вин на одной винной полке\n\n
+        Добавлен экран «Что нового»"
+        </string>
+
+    <string name="tvVersion01">1.0</string>
+    <string name="tvDate01">22.01.22</string>
+    <string name="tvContent01">
+        "Выпущена первая версия"
+        </string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: РЕКЛАМНЫЕ СТРОКИ-->
+    <string name="ad_attribution">Реклама</string>
+    <!--    endregion-->
+
+    <!--    =================================================================================-->
+    <!--    region: ЭТО СТРОКИ, ОТНОСЯЩИЕСЯ К ПРОДАЖЕ ПРЕМИУМ -->
+    <string name="message_premium">Изменилось состояние Premium!</string>
+    <string name="content_description_free_vs_premium_indicator">Индикатор бесплатных или премиальных изображений</string>
+
+    <string name="debug_price_not_found">N/A</string>
+    <string name="debug_title_not_found">SKU: \"%1$s\" Not Found</string>
+    <string name="debug_description_not_found">Убедитесь, что вы загрузили APK-файл в консоль разработчика Google Play, что для APK-файла созданы правильные номера SKU и что вошедшая учетная запись включена для тестирования.</string>
+
+    <string name="alert_error_message_encoded_public_key_not_set">base64EncodedPublicKey
+        <b>must</b> быть настроен для проверки подписи. Вы можете добавить это в <b>local.properties</b>
+        как только вы получите его из игры.\n\n<b>Пример: <tt>base64EncodedPublicKey=[key value]</tt>
+        </b></string>
+    <string name="alert_error_title_encoded_public_key_not_set">Открытый ключ не установлен</string>
+
+    <string name="error_unable_to_make_purchase">Невозможно совершить покупку.</string>
+
+    <string name="header_go_premium">Перейти на Premium</string>
+    <string name="header_fuel_your_ride">Заправляй свою поездку</string>
+    <!--    endregion-->
+    <!--===================================================================================== -->
+
+</resources>
