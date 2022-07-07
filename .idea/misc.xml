@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_about_the_application.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_choose_from_pictures.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_debug_screen.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_edit.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_edit_appearance.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_edit_aroma.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_edit_general_information.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_edit_taste_aftertaste.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_edit_tasting_notes.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_edit_tasting_notes2.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_edit_title.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_faq.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_make_purchase.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_rotation_sample.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_screen_rate_and_review.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/activity_whats_new.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/ad_simple_custom_template.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/ad_unified.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/dialog_wine_shelf.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/inventory_header.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/inventory_item.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/item_list_layout.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/item_list_pfoto_layout.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/item_list_pictures_layout.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/item_list_wine_shelf.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/popupwindow.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/layout/settings_activity.xml" value="0.1038500506585613" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/menu/activity_edit_menu_scrolling.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/menu/activity_main_menu_scrolling.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/menu/menu_photo_adapter.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/menu/menu_wine_adapter.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/menu/menu_wineshelf_adapter.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProjects/MY_PROJECTS/Wine_Notes/Sommelier_notebook/app/src/main/res/xml/root_preferences.xml" value="0.1038500506585613" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

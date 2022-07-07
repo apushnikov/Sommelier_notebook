@@ -1,0 +1,111 @@
+plugins {
+    id 'com.android.application'
+}
+
+def localProperties = new Properties()
+try {
+    localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+} catch (Exception e) {
+    logger.warn("No Local Properties File Found!")
+}
+
+android {
+    signingConfigs {
+        // TODO(developer): Configure to sign app with a release key for testing.
+        //   Настроить для подписи приложения ключом выпуска для тестирования
+/*        release {
+            storeFile file('path/to/release/signing/key')
+            keyAlias 'release_key_alias'
+            keyPassword "${password}"
+            storePassword "${password}"
+        }*/
+    }
+
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.apushnikov.sommelier_notebook"
+        minSdk 21
+        targetSdk 31
+        versionCode 10
+        versionName "1.1"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation":
+                                      "$projectDir/schemas".toString()]
+            }
+        }
+        if (!localProperties['base64EncodedPublicKey']) {
+
+/*            'base64EncodedPublicKey должен быть установлен для проверки подписи. '+
+            «Вы можете добавить его в local.properties, как только получите его из Play. '+
+            'Пример: base64EncodedPublicKey = [значение ключа]' */
+
+            logger.warn('base64EncodedPublicKey must be set for signature verification. ' +
+                    'You can add it to local.properties once you have gotten it from Play. ' +
+                    'Example: base64EncodedPublicKey=[key value]')
+        }
+        buildConfigField("String", "BASE64_ENCODED_PUBLIC_KEY", "\"" + localProperties['base64EncodedPublicKey'] + "\"")
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // TODO(developer): uncomment below once config above is complete and uncommented.
+            //  раскомментируйте ниже, как только конфигурация выше будет завершена и раскомментирована.
+//             signingConfig signingConfigs.release
+
+            // В сгенерированном файле Было так
+/*            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'*/
+        }
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 31
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "junit:junit:4.13.2"
+    implementation 'com.google.firebase:firebase-firestore:24.1.0'
+
+    implementation "androidx.room:room-runtime:2.4.2"
+    annotationProcessor "androidx.room:room-compiler:2.4.2"
+
+    // optional - RxJava support for Room (необязательно - поддержка RxJava для Room)
+    implementation "androidx.room:room-rxjava2:2.4.2"
+    // optional - Guava support for Room, including Optional and ListenableFuture (необязательно - поддержка Guava для Room, включая Optional и ListenableFuture)
+    implementation "androidx.room:room-guava:2.4.2"
+    // optional - Test helpers (необязательно - помощники по тестированию)
+    testImplementation "androidx.room:room-testing:2.4.2"
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.preference:preference:1.2.0'
+
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation 'com.google.android.play:core:1.10.3'
+
+    implementation "com.android.billingclient:billing:4.1.0"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
+
+}
